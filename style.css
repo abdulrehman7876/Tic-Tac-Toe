@@ -8,7 +8,7 @@ h1 {
 }
 
 body {
-    background-color: #3C1518;
+    background-color: #022F40;
     text-align: center;
 }
 
@@ -36,23 +36,34 @@ body {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     font-size: 3rem;
     color: #FF2E00;
-    background-color: #FCFF4B;
+    background-color: #989C94;
+    cursor: pointer;
 }
+.box:hover {
+    background-color: #3f403e;
+}
+
 
 #resetBtn {
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #79B791;
+    background-color: #918EF4;
     border-radius: 1rem;
     border: none;
+    cursor: pointer;
+}
+#resetBtn:hover,#newBtn:hover{
+    background-color: #0f0d34;
+    color: white;
 }
 
 #newBtn {
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #79B791;
+    background-color: #918EF4;
     border-radius: 1rem;
     border: none;
+    cursor: pointer;
 }
 
 #Winner {
@@ -67,9 +78,11 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vmin;
+    transition: display 2s ease;
 }
 
 .newContainer {
     display: none;
 }
+
 
