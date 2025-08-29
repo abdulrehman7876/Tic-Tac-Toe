@@ -5,6 +5,7 @@ let hide = document.querySelector(".newContainer");
 let newBtn = document.querySelector("#newBtn");
 let para = document.querySelector("p");
 let resetBtn = document.querySelector("#resetBtn"); 
+let isDraw = false;
 
 let ind = 0;
 
@@ -41,6 +42,9 @@ box.forEach((bx)=> {
             ind++;
         }
         winner();
+        if (isDraw && ind === 9) {
+            drawGame();
+        }
         bx.disabled = true;
     })
 })
@@ -80,11 +84,12 @@ const winner = ()=> {
         if (pos1val != "" && pos2val != "" && pos3val != "") {
             if (pos1val === pos2val && pos2val === pos3val) {
                 showWinner(pos1val);
+                isDraw = false;
+                break;
+            } else {
+                isDraw = true;
             }
         } 
-    if (ind === 9) {
-        drawGame();
-    }
     }
 }
 
@@ -95,3 +100,4 @@ const winner = ()=> {
 
 newBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+
