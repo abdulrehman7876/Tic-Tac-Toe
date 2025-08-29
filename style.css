@@ -38,14 +38,11 @@ body {
     color: #FF2E00;
     background-color: #989C94;
     cursor: pointer;
-    transition: color 2s ease;
 }
 .box:hover {
     background-color: #3f403e;
 }
-.box:active {
-    color: white; 
-}
+
 
 
 #resetBtn {
@@ -82,12 +79,12 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vmin;
-    transition: display 2s ease;
 }
 
 .newContainer {
     display: none;
 }
+
 
 
 
