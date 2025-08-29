@@ -38,9 +38,13 @@ body {
     color: #FF2E00;
     background-color: #989C94;
     cursor: pointer;
+    transition: color 2s ease;
 }
 .box:hover {
     background-color: #3f403e;
+}
+.box:active {
+    color: white; 
 }
 
 
@@ -84,5 +88,6 @@ body {
 .newContainer {
     display: none;
 }
+
 
 
