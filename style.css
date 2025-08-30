@@ -124,9 +124,10 @@ main {
 
 .newContainer {
     position: absolute;
-    transform: translateY(-100vmin);
+    transform: translateY(-150vmin);
     transition: transform 1s ease;
 }
+
 
 
 
