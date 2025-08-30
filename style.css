@@ -27,6 +27,36 @@ body {
     justify-content: center;
     gap: 1.5vmin;
  }
+.turn-div {
+    height: 12vmin;
+    width: 40vmin;
+    background-color: #989C94;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13vmin;
+    padding: 5vmin;
+    position: relative;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.label-x{
+    font-size: 10vmin;
+    color: #FF2E00;
+}
+.label-y{
+    font-size: 10vmin;
+    color: #044389;
+}
+.border {
+    height: 12vmin;
+    width: 20vmin;
+    background-color: rgba(2, 47, 64, 0.5);
+    position: absolute;
+    transform: translateX(-10vmin);
+    transition: transform 0.9s ease;
+}
+
 
 .box {
     height: 18vmin;
@@ -82,8 +112,11 @@ body {
 }
 
 .newContainer {
-    display: none;
+    position: absolute;
+    transform: translateY(-100vmin);
+    transition: transform 1s ease;
 }
+
 
 
 
