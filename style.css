@@ -74,15 +74,11 @@ main {
     border: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     font-size: 3rem;
-    color: #FF2E00;
+    color: transparent;
     background-color: #989C94;
     cursor: pointer;
+    transition: color 1s ease;
 }
-.box:hover {
-    background-color: #3f403e;
-}
-
-
 
 #resetBtn {
     padding: 1rem;
@@ -127,6 +123,7 @@ main {
     transform: translateY(-150vmin);
     transition: transform 1s ease;
 }
+
 
 
 
