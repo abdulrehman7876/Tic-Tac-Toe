@@ -69,7 +69,7 @@ const resetGame = () => {
     hide.classList.add("newContainer");
     ind = 0;
     border.style.transform = "translateX(-10vmin)";
-    hide.style.transform = "translateY(-100vmin)";
+    hide.style.transform = "translateY(-150vmin)";
 }
 
 const showWinner = (pos1val) => {
@@ -98,5 +98,6 @@ const winner = ()=> {
 
 newBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+
 
 
