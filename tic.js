@@ -1,10 +1,9 @@
 let box = document.querySelectorAll(".box");
-let inText1;
-let inText2;
 let hide = document.querySelector(".newContainer");
 let newBtn = document.querySelector("#newBtn");
 let para = document.querySelector("p");
 let resetBtn = document.querySelector("#resetBtn"); 
+let border = document.querySelector(".border"); 
 let isDraw = false;
 
 let ind = 0;
@@ -22,7 +21,7 @@ const winComb = [
 let turn = true;
 
 const drawGame = () => {
-    hide.classList.remove("newContainer");
+    hide.style.transform = "translateY(0)";
     para.innerText = `Draw`;
     disablebox();
 }
@@ -46,6 +45,7 @@ box.forEach((bx)=> {
             drawGame();
         }
         bx.disabled = true;
+        border.style.transform = turn ? "translateX(-10vmin)" : "translateX(10vmin)";
     })
 })
 
@@ -60,6 +60,7 @@ const enablebox = () => {
     for (let bx of box) {
         bx.disabled = false;
         bx.innerText = "";
+        bx.style.color = "transparent"
     }
 }
 const resetGame = () => {
@@ -67,10 +68,12 @@ const resetGame = () => {
     enablebox();
     hide.classList.add("newContainer");
     ind = 0;
+    border.style.transform = "translateX(-10vmin)";
+    hide.style.transform = "translateY(-100vmin)";
 }
 
 const showWinner = (pos1val) => {
-    hide.classList.remove("newContainer");
+    hide.style.transform = "translateY(0)";
     para.innerText = `Winner is Player ${pos1val}`;
     disablebox();
 }
@@ -93,11 +96,7 @@ const winner = ()=> {
     }
 }
 
-
-
-
-
-
 newBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+
 
