@@ -117,7 +117,9 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vmin;
+    height: 30vmin;
+    width: 100vmin;
+    background-color: rgba(2, 47, 64,0.5);
 }
 
 .newContainer {
@@ -125,6 +127,7 @@ main {
     transform: translateY(-100vmin);
     transition: transform 1s ease;
 }
+
 
 
 
