@@ -10,6 +10,15 @@ h1 {
 body {
     background-color: #022F40;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    transition: transform 2s ease;
 }
 
 .container {
@@ -116,6 +125,7 @@ body {
     transform: translateY(-100vmin);
     transition: transform 1s ease;
 }
+
 
 
 
